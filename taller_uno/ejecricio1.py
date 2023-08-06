@@ -1,11 +1,4 @@
-# Realice un algoritmo que le sirva a una casa de cambio de moneda a realizar los cálculos
-# para que cuando un cliente llegue, El ingrese el valor en pesos que desea cambiar y el
-# software le indique ese valor en pesos convertido a dólares, soles y rumpias.
-# Es importante que revise las tasas de conversión de Colombia para esos valores y realice los cálculos adecuados
-# recuerde que cuando les muestre el resultado a los clientes debe indicar
-# el valor que ingreso, el nombre del cliente, el valor del dólar y valor de conversión en dólares,
-# el valor del sol y valor de conversión en soles y el valor de la rumpia y el valor de conversión en rumpias
-
+# Casa de Cambio: Dolares, Soles y Ripuas
 
 def casa_de_cambio():
     # Tasas de conversión
@@ -28,7 +21,6 @@ def casa_de_cambio():
     print("Valor en dólares (USD): USD", valor_dolares)
     print("Valor en soles (PEN): PEN", valor_soles)
     print("Valor en rupias (INR): INR", valor_rupias)
-
 
 # Ejecutar el programa
 casa_de_cambio()
