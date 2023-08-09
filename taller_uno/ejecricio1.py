@@ -2,9 +2,9 @@
 
 def casa_de_cambio():
     # Tasas de conversión
-    tasa_dolar_cop = 3000
-    tasa_dolar_soles = 4.5
-    tasa_dolar_rupias = 80
+    tasa_dolar_cop = 4030
+    tasa_dolar_soles = 1093.15
+    tasa_dolar_rupias = 48.7
 
     # Pedir datos al cliente
     nombre_cliente = input("Ingrese su nombre: ")
@@ -16,11 +16,10 @@ def casa_de_cambio():
     valor_rupias = valor_pesos / tasa_dolar_rupias
 
     # Mostrar resultados
-    print("\nResultado para:", nombre_cliente)
-    print("Valor ingresado en pesos: COP", valor_pesos)
-    print("Valor en dólares (USD): USD", valor_dolares)
-    print("Valor en soles (PEN): PEN", valor_soles)
-    print("Valor en rupias (INR): INR", valor_rupias)
+    print("\nHola,", nombre_cliente , "el valor que ingresaste en pesos (COP) fue de: ",valor_pesos)
+    print("El valor del dolar (USD) hoy esta en:",tasa_dolar_cop, "La conversion en dólares (USD) seria de: ", valor_dolares)
+    print("El valor del sol (PEN) hoy esta en:" ,tasa_dolar_soles , "La conversion en soles (PEN) seria de: ", valor_soles)
+    print("El valor de las rupias (INR) hoy esta en:", tasa_dolar_rupias , "La conversion en rupias (PEN) seria de: ", valor_rupias)
 
 # Ejecutar el programa
 casa_de_cambio()

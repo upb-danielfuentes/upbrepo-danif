@@ -1,22 +1,14 @@
-# Un empleado de la empresa SancochoFood desea saber cual es su salario real, teniendo 
-# presente los descuentos que se aplican por las diferentes deducciones legales. El empleado 
-# solo conoce cual es el valor de su hora ($15.000) y la cantidad de horas que trabaja por 
-# semana, el sistema se la debe solicitar al empleado que ingrese cuantas horas trabajo a la 
-# semana. Realice el cálculo del salario del empleado al mes, sabiendo que para salud se le 
-# deduce el 4%, para pensión le deduce el 4%, para caja de compensación el 2% y le agrega el 
-# auxilio de transporte que es un valor fijo para los Colombianos de $140.606.
-# Es importante que le indique al empleado el valor de su salario mensual, el valor que le 
-# deducen por salud, el valor que le deducen por pensión, el valor que le deducen por caja de 
-# compensación y el valor que le adicionan por auxilio de transporte, finalmente le indicamos 
-# el valor que será consignado en la cuenta.
+# Algoritmo Dos
 
 def calcular_salario_mensual():
     # Datos del empleado
-    valor_hora = 15000
-    horas_semana = float(input("Ingrese la cantidad de horas que trabaja por semana: "))
+    va = 15000
+    print ("Bienvenidos a SancochoFood Company S.A")
+    nombre_cliente = input("Ingrese el nombre del empleado: ")
+    hs = float(input("Ingrese la cantidad de horas que trabaja en la semana: "))
     
     # Cálculo del salario sin deducciones
-    salario_sin_deducciones = valor_hora * horas_semana * 4  # Se multiplican las horas por 4 semanas al mes
+    salario_sin_deducciones = va * hs * 4  # Se multiplican las horas por 4 semanas al mes
     
     # Cálculo de deducciones
     deduccion_salud = salario_sin_deducciones * 0.04
@@ -34,7 +26,7 @@ def calcular_salario_mensual():
     print("Deducción por pensión: COP", deduccion_pension)
     print("Deducción por caja de compensación: COP", deduccion_caja_compensacion)
     print("Auxilio de transporte: COP", auxilio_transporte)
-    print("Salario mensual real: COP", salario_mensual)
+    print("El Salario mensual real neto que recibirias en tu cuenta bancaria", nombre_cliente, "seria de: COP", salario_mensual)
 
 
 # Ejecutar el programa
