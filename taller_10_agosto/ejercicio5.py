@@ -1,0 +1,1 @@
+# Determine la suma del valor menor y mayor de un grupo de cuatro datos dados
