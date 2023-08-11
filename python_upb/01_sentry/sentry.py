@@ -12,6 +12,6 @@ def zero_division():
         print(zerocheck)
     except Exception as e:
         sentry_sdk.capture_exception(e)
-        sentry_sdk.capture_message("Zero Division Error en la otra pagina")
+        sentry_sdk.capture_message("Zero Division is Impossible")
 
 zero_division()
