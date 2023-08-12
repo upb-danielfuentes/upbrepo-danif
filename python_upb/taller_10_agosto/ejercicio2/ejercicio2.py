@@ -6,12 +6,7 @@
 # x=3 Si C <= Y
 # x=4 No cumple con nada
 
-def queesx():
-    A = int(input("valor A: "))
-    B = int(input("valor B: "))
-    C = int(input("valor C: "))
-    Y = int(input("valor Y: "))
-    
+def queesx(A, B, C, Y):
     if Y < A and A < B < C:
         X = 0
     elif A <= Y < B:
@@ -23,6 +18,17 @@ def queesx():
     else:
         X = 4
         
+    return X
+
+def main():
+    A = int(input("valor A: "))
+    B = int(input("valor B: "))
+    C = int(input("valor C: "))
+    Y = int(input("valor Y: "))
+    
+    X = queesx(A, B, C, Y)
     print(X)
 
-queesx()
+if __name__ == "__main__":
+    main()
+
