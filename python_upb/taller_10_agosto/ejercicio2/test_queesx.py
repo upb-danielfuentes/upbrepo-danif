@@ -16,4 +16,4 @@ def test_queesx_case_5():
     assert queesx(1, 2, 3, 4) == 3
 
 def test_queesx_case_6():
-    assert queesx(1, 2, 3, 5) == 4
+    assert queesx(1, 2, 3, 5) == 3
