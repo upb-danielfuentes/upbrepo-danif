@@ -7,12 +7,12 @@ def empanadas():
     }
     try:
         print("🚀 Iniciando programa 🚀")
-        input("Bienvenido a la empanadita don Morcillin, presione Enter para continuar...")
-        num_empanadas = int(input("Ingrese el número de pedidos 🌮 a comprar: "))
+        input("Bienvenidos a Don Morcillin, presione Enter para continuar...")
+        num_pedidos = int(input("Ingrese el número de pedidos 🌮 a comprar: "))
         total_costo = 0
 
-        for i in range(num_empanadas):
-            print(f"Pedido 🌮 {i + 1}:")
+        for i in range(num_pedidos):
+            print(f"Este es el Pedido 🌮 {i + 1}:")
             print("Tipos de empanadas disponibles (🥩, 🍗, 🧀, 🥔):")
             for tipo in menu_empanadas:
                 print(f"- {tipo}")
@@ -20,7 +20,7 @@ def empanadas():
             tipo_empanada = input("Que tipo de empanada deseas?: ")
             if tipo_empanada in menu_empanadas:
                 try:
-                    cantidad = int(input(f"Cuantas empandas de {tipo_empanada} quiere sumerce: "))
+                    cantidad = int(input(f"Cuantas empanadas de {tipo_empanada} quiere sumerce: "))
                     costo_empanada = menu_empanadas[tipo_empanada]
                     costo_total_empanada = cantidad * costo_empanada
                     total_costo += costo_total_empanada
@@ -43,7 +43,7 @@ def empanadas():
 def medioPago():
     try:  
         medios_validos = ["Nequi", "Bancolombia", "Efectivo", "Tarjeta"]
-        mediopago = input("Escriba su medio de pago: ")
+        mediopago = input("Cual va a ser su medio de pago? (Nequi, Bancolombia, Efectivo, Tarjeta: ")
         if mediopago in medios_validos:
             if mediopago == "Nequi":
                 print("Consigne a este número: 3013366588")

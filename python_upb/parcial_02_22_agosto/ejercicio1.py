@@ -1,5 +1,8 @@
+print("🚀 Iniciando programa 🚀")
+print("--------------------------------------------------")
 # Solicitar al usuario la cantidad de números a analizar
 n = int(input("Ingrese la cantidad de números a analizar: "))
+print("--------------------------------------------------")
 
 # Inicializar la lista para almacenar los números ingresados
 numeros = []
@@ -41,10 +44,13 @@ for numero in numeros:
         numeros_no_repetidos.add(numero) # .add() es un método que agrega un elemento a un conjunto
 
 # Mostrar los resultados
+print("--------------------------------------------------")
 print("Resultados:")
-print("Suma:", suma)
-print("Multiplicación:", multiplicacion)
-print("Promedio:", promedio)
-print("Número más grande:", maximo)
-print("Número más pequeño:", minimo)
-print("Cantidad de números repetidos:", len(numeros_repetidos)) # len() es una función que devuelve la cantidad de elementos de un conjunto
+print("--------------------------------------------------")
+print("➕ Suma:", suma)
+print("✖️ Multiplicación:", multiplicacion)
+print("➗ Promedio:", promedio)
+print("🔺 Número más grande:", maximo)
+print("🔻 Número más pequeño:", minimo)
+print("🟰  Cantidad de números repetidos:", len(numeros_repetidos)) # len() es una función que devuelve la cantidad de elementos de un conjunto
+print("--------------------------------------------------")
