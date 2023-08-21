@@ -26,7 +26,7 @@ def pacientes():
             estado_civil = input("Ingrese el estado civil del paciente: ")
             pacientes.append({"nombre":nombre,"apellido":apellido,"telefono":telefono,"fecha_nacimiento":fecha_nacimiento,"sexo":sexo,"correo":correo,"direccion":direccion,"ciudad":ciudad,"pais":pais,"estado_civil":estado_civil})
         for i in pacientes:
-            if i["sexo"] == "femenino" OR i["sexo"] == "Femenino" OR i["sexo"] == "FEMENINO":
+            if i["sexo"] == "femenino" and i["edad"] < 18:
                 print(f"La paciente {i['nombre']} {i['apellido']} debe aplicarse la vacuna de tetanos")
             elif i["sexo"] == "masculino":
                 if i["edad"] < 18:
