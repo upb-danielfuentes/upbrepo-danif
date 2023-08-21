@@ -5,13 +5,16 @@ sentry_sdk.init(
     traces_sample_rate=1.0
 )
 
-def zero_division():
-    try:
-        zerocheck= int(input("Enter the number: "))
-        zerocheck = 1 / zerocheck
-        print(zerocheck)
-    except Exception as e:
-        sentry_sdk.capture_exception(e)
-        sentry_sdk.capture_message("Zero Division is Impossible")
+# Función para capturar excepciones y mensajes
+def capture_exception(e):
+    sentry_sdk.capture_exception(e)
 
-zero_division()
+def capture_message(message):
+    sentry_sdk.capture_message(message)
+
+# Manejar excepciones generales
+try:
+    import main_script
+except Exception as e:
+    capture_exception(e)
+    capture_message("Error en el script principal")
