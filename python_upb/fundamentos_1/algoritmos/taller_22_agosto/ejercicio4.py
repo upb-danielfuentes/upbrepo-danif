@@ -146,4 +146,4 @@ def veterinaria():
             print("La respuesta debe ser SI o NO")
             continue
 
-veterinaria()-
+veterinaria()
