@@ -1,4 +1,5 @@
 # test_genero.py
+import pytest
 import genero
 
 def test_genero_femenino():
