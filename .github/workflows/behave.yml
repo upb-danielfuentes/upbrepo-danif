@@ -19,22 +19,7 @@ jobs:
       run: |
         pip install --upgrade pip
         pip install behave
-        pip install behave-html-formatter
 
     - name: Ejecutar pruebas Gherkin
       run: |
-        behave -f progress2 --junit
-
-    - name: Generar informe HTML
-      run: |
-        behave -f behave_html_formatter:html -o reports
-
-    - name: Notificar si las pruebas fallaron
-      if: ${{ failure() }}
-      run: echo "Las pruebas fallaron"
-
-    - name: Subir informe HTML como artefacto
-      uses: actions/upload-artifact@v2
-      with:
-        name: behave-reports
-        path: reports
+        behave
