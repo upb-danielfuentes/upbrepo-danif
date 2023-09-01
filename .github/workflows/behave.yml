@@ -22,4 +22,18 @@ jobs:
 
     - name: Ejecutar pruebas Gherkin
       run: |
-        behave
+        behave --format=progress2 --junit
+
+    - name: Generar informe HTML
+      run: |
+        behave --format=html -o reports
+
+    - name: Notificar si las pruebas fallaron
+      if: ${{ failure() }}
+      run: echo "Las pruebas fallaron"
+
+    - name: Subir informe HTML como artefacto
+      uses: actions/upload-artifact@v2
+      with:
+        name: behave-reports
+        path: reports
