@@ -175,3 +175,6 @@ build/
 # Dependencias de desarrollo (opcional)
 # Puedes eliminar esta sección si no usas dependencias de desarrollo
 devDependencies/
+/test-results/
+/playwright-report/
+/playwright/.cache/
