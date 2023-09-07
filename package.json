@@ -7,7 +7,8 @@
   "author": "Daniel Fuentes",
   "license": "ISC",
   "dependencies": {
-    "axios": "^1.5.0"
+    "axios": "^1.5.0",
+    "cypress": "^13.1.0"
   },
   "devDependencies": {
     "@playwright/test": "^1.37.1"
