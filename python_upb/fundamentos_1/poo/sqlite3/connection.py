@@ -16,16 +16,18 @@ cursor.execute("""
 
 # Funciones para la inserción de datos
 sql = ("INSERT INTO tbl_Empleados VALUES (null,?,?,?,?)")
-datos_insert = ('1018436098', 'Daniel', 'Fuentes', 33)
+datos_insert = ('2132232', 'Ramiro', 'Sepulveda', 33)
 cursor.execute(sql, datos_insert)
 con.commit()
 
 resultado_con = cursor.execute("SELECT * FROM tbl_Empleados")
+print("///////////////////////////////")
 print(resultado_con.fetchall())
+print("///////////////////////////////")
 
-print ("---------------------------------")
-res = cursor.execute("SELECT nombre_empleado FROM tbl_Empleados WHERE id_empleado = 1")
+res = cursor.execute("SELECT nombre_empleado,apellido_empleado FROM tbl_Empleados WHERE id_empleado = 9")
 print ("---------------------------------")
 print (res.fetchone())
+print ("---------------------------------")
 
 
