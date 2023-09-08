@@ -158,3 +158,25 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+
+# Dependencias de Node.js
+node_modules/
+
+# Archivos de registro
+logs/
+*.log
+
+# Directorio de construcción
+build/
+
+# Archivos de configuración
+.env
+
+# Dependencias de desarrollo (opcional)
+# Puedes eliminar esta sección si no usas dependencias de desarrollo
+devDependencies/
+/test-results/
+/playwright-report/
+/playwright/.cache/
+
+.idea/

@@ -57,4 +57,5 @@ def medioPago():
             print("Medio de pago no válido")
     except KeyboardInterrupt:
         print("\n 🚫 Proceso interrumpido por el usuario.🚫")
+
 empanadas()
