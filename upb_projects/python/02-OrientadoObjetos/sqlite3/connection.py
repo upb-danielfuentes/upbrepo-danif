@@ -16,7 +16,7 @@ cursor.execute("""
 
 # Funciones para la inserción de datos
 sql = ("INSERT INTO tbl_Empleados VALUES (null,?,?,?,?)")
-datos_insert = ('2132232', 'Ramiro', 'Sepulveda', 33)
+datos_insert = ('388383744', 'Maira', 'Yajari', 88)
 cursor.execute(sql, datos_insert)
 con.commit()
 
@@ -26,8 +26,20 @@ print(resultado_con.fetchall())
 print("///////////////////////////////")
 
 res = cursor.execute("SELECT nombre_empleado,apellido_empleado FROM tbl_Empleados WHERE id_empleado = 9")
+con.commit() # Guarda los cambios
 print ("---------------------------------")
 print (res.fetchone())
 print ("---------------------------------")
+
+update = cursor.execute("UPDATE tbl_Empleados SET nombre_empleado = 'Juan' WHERE id_empleado = 8")
+con.commit() # Guarda los cambios
+print ("---------------------------------")
+print (update.fetchone()) # fetchone() trae el primer registro
+
+delete = cursor.execute("DELETE FROM tbl_Empleados WHERE id_empleado = 7")
+con.commit() #commit guarda los cambios
+print ("---------------------------------")
+print (delete.fetchone()) # fetchone() trae el primer registro
+
 
 
