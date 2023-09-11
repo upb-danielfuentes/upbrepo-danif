@@ -1,7 +1,7 @@
 import sqlite3
 
 def conectar():
-    miConexion = sqlite3.connect("db_tienda_pedro")
+    miConexion = sqlite3.connect("db_tienda_pedro.db")
     miCursor = miConexion.cursor()
 
     try: 
